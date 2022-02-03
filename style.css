@@ -32,21 +32,27 @@ header nav a {
  .main{
    
      display: flex;
+     position: relative;
      flex-direction: column;
      justify-content: space-evenly;
      align-items: center;
      padding: 100px 0 0 0;
  }
  .main h1{
+     position: absolute;
     color:whitesmoke;
      font-size: 5em;
      font-weight: 1500;
  }
 
  .main p {
-     padding-top: 50px;
+     padding-top: 200px;
+     margin-top: 50px;
     color:whitesmoke;
      font-size: 3em;
-    
+ }
+
+ .main p span{
+     font-weight: 900;
  }
 
