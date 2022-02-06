@@ -80,11 +80,5 @@ header nav a {
     padding :300px 20px 50px 20px;
 }
 .card{
-    max-width: fit-content;
-    max-height:fit-content ;
-}
-.card:hover{
-    animation: alternate-reverse;
-    background-color: aliceblue;
     
 }
