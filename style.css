@@ -5,23 +5,25 @@
     scroll-behavior: smooth;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(19, 0, 26);
-    
+  
+  
 }
 
 body{
  
     display: flex;
     flex-direction: column;
+ 
     width: 100%;
     height: 100vh;
-    padding: 0px 20px 0px 20px;
+   
 }
 header {
    
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px;
+    padding-top: 2em;
 
 
 }
@@ -35,24 +37,29 @@ z-index: 999;
 
 header nav a {
    
-    padding: 20px;
+    padding: 1.2em;
     color:whitesmoke;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.3em;
-   
+    transition:0.6s ease;
 }
+
+header nav a:hover {
+color: gray;
+}
+
 
  .main{
      display: flex;
-     position: relative;
+   
      flex-direction: column;
      justify-content: space-evenly;
      align-items: center;
      padding: 100px 0 0 0;
  }
  .main h1{
-     position: absolute;
+    padding-top: 100px;
     color:whitesmoke;
      font-size: 5em;
      font-weight: 1500;
@@ -63,8 +70,9 @@ header nav a {
  }
 
  .main p {
+     
      text-align: center;
-     padding-top: 200px;
+     padding-top: 1.8em;
      margin-top: 50px;
     color:whitesmoke;
      font-size: 3em;
@@ -72,28 +80,76 @@ header nav a {
 
  .main p span{
      font-weight: 900;
+     transition: 0.6s ease;
+ }
+
+ .main p span:hover {
+color: gray;
+
+cursor: grab;
+transform: scale(1.1);
  }
 
  .art {
-     padding-top: 20px;
-     display: flex;
+     padding-top: 15em;
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
  }
 
 .card{
-    display: flex;
+  
     background-color: black;
     border: 10px solid black;
-    height: 30em;
+    height: fit-content;
     width: 23em;
     overflow: hidden;
     border-radius: 4px;
     margin: 20px;
-    align-items:flex-start;
-    justify-content: center;
 }
 .image img{
-    
     width: 100%;
-    height: 100%;
+}
+ 
+
+@media (max-width: 1023px){
+    body{
+        width: 100%;
+       
+       
+    }
+    header {
+        padding-top: 1.2em;
+    }
+
+header nav a {
+    padding: 1.2em;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+ .main{
+   padding-top: 1em;
+   height: 100vh;
+   
+ }
+
+ .main h1{
+
+    font-size: 3em;
+    font-weight: 900;
+   
+}
+.main h1:hover{
+   animation: reverse;
+}
+
+.main p {
+    padding-top: 0.3em;
+    margin-top: 50px;
+    font-size: 1.6em;
+}
+
 
 }

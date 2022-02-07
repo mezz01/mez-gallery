@@ -1,2 +1,2 @@
-let h1 = document.getElementById("#animatehead");
+let h = document.getElementById(".h1animate");
 
