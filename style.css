@@ -150,6 +150,19 @@ header nav a {
     margin-top: 50px;
     font-size: 1.6em;
 }
+ 
+footer {
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
 
+footer .info,.copyright,.logo{
+    color: whitesmoke;
+    
+}
 
 }
