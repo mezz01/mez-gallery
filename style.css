@@ -111,7 +111,39 @@ transform: scale(1.1);
 .image img{
     width: 100%;
 }
+footer {
+    padding-top: 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
  
+}
+
+footer p a {
+color: rgb(97, 69, 141);
+text-decoration: none;
+font-family: serif;
+font-size: 600;
+}
+
+footer p,span{
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    padding: 8px 8px 8px 8px;
+    font-weight: 250;
+    font-size: 1.3em;
+}
+ .top{
+     padding-top: 30px;
+ }
+ .but{
+     padding-bottom: 70px;
+ }
 
 @media (max-width: 1023px){
     body{
@@ -150,19 +182,4 @@ header nav a {
     margin-top: 50px;
     font-size: 1.6em;
 }
- 
-footer {
-    background-color:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
-}
-
-footer .info,.copyright,.logo{
-    color: whitesmoke;
-
-}
-
 }
