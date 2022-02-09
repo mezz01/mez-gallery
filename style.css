@@ -157,12 +157,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: fit-content;
+    height: 50px;
 }
 
 footer .info,.copyright,.logo{
     color: whitesmoke;
-    
+
 }
 
 }
